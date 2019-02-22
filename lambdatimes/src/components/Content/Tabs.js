@@ -10,11 +10,10 @@ const Tabs = ({selectTabHandler, selected, tabs}) => {
         {tabs.map((tab, t) => <Tab key={t} tab={tab} selected={selected} selectTabHandler={selectTabHandler} />)}
       </div>
     </div>
-  )
-}
+  );
+};
 
-// Make sure to use PropTypes to validate your types!
-Tabs.PropTypes = {
-  tabs: PropTypes.string.isRequired
+Tabs.propTypes = {
+  tab: PropTypes.string
 };
 export default Tabs;
